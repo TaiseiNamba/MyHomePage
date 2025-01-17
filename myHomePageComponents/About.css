@@ -1,0 +1,82 @@
+.about-me {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+  }
+  
+  .myIntroduction{
+    font-size: 3.5em;
+    color: rgb(184, 14, 91);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .my-experience {
+    padding: 20px;
+    font-size: 1.1em;
+    background-color: antiquewhite;
+  }
+
+  .my-experience p{
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .myWork {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: azure;
+  }
+
+  .my-experience {
+    font-size: 50px;
+  }
+  
+  .myWork li {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 30px;
+    color: black;
+  }
+
+  span{
+    color: red;
+    font-size: 45px;
+  }
+
+  .myWork li:before {
+    content: "→ "; /* Adds an arrow before each list item */
+  }
+  /* About.css */
+
+/* 回転と色の変化のアニメーション */
+@keyframes rotateAndChangeColor {
+    0% {
+      transform: rotate(0deg); /* 初期位置 */
+      color: red;
+    }
+    25% {
+      transform: rotate(90deg);
+      color: orange;
+    }
+    50% {
+      transform: rotate(180deg);
+      color: yellow;
+    }
+    75% {
+      transform: rotate(270deg);
+      color: green;
+    }
+    100% {
+      transform: rotate(360deg); /* 完全に1回転 */
+      color: blue;
+    }
+  }
+  
+  /* about-me クラスにアニメーションを適用 */
+  .about-me {
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    animation: rotateAndChangeColor 3s infinite; /* 5秒間で回転し、色が変化する無限ループ */
+  }
+  
